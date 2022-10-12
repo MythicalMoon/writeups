@@ -1,6 +1,6 @@
 ## nmap 
 
-![nmap](https://raw.githubusercontent.com/MythicalMoon/writeups/tree/main/PG/glasgowsmile/Screenshots/2022-10-12-07-41-40.png?raw=true)
+![nmap](https://raw.githubusercontent.com/MythicalMoon/writeups/tree/main/PG/glasgowsmile/Screenshots/2022-10-12-07-41-40.png)
 
 ## gobuster
 
