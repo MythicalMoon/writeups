@@ -3,16 +3,16 @@
 add 192.168.154.11 to /etc/hosts as dawn.pg
 
 NMAP scan: nmap -sC -sV -vv 192.168.154.11
-    ![](/Screenshots/2022-10-10-08-08-35.png)
+    ![](Screenshots/2022-10-10-08-08-35.png)
 
 gobuster: gobuster web for web discovery using 2.3-medium.txt from seclist
-    ![](/Screenshots/2022-10-10-08-12-25.png)
+    ![](Screenshots/2022-10-10-08-12-25.png)
 
 /logs:
-    ![](/Screenshots/2022-10-10-08-13-02.png)
+    ![](Screenshots/2022-10-10-08-13-02.png)
 
 management.log:
-    ![](/Screenshots/2022-10-10-08-14-59.png)
+    ![](Screenshots/2022-10-10-08-14-59.png)
 
 Management.log is a pspy64 leak. Here we can see that there's scheduled file execution:
 
