@@ -16,7 +16,7 @@
 
 ## main page
 
-![](Screenshots/2022-10-12-07-42-22.png)
+![main](Screenshots/2022-10-12-07-42-22.png)
 
 ## /joomla
 
