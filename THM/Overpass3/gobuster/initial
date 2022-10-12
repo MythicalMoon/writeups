@@ -1,0 +1,4 @@
+/.htaccess            (Status: 403) [Size: 218]
+/.htpasswd            (Status: 403) [Size: 218]
+/backups              (Status: 301) [Size: 236] [--> http://10.10.67.137/backups/]
+/cgi-bin/             (Status: 403) [Size: 217]

@@ -1,0 +1,115 @@
+IP = 10.129.107.59
+
+--------------------------------------
+# ports
+22 ssh 
+80 http
+1337 waste?
+Linux
+
+-------------------------------------
+2021/11/22 10:14:49 Starting gobuster in directory enumeration mode
+===============================================================
+/index.php            (Status: 301) [Size: 0] [--> http://10.129.107.59/]
+/wp-content           (Status: 301) [Size: 319] [--> http://10.129.107.59/wp-content/]
+/wp-login.php         (Status: 200) [Size: 5695]                                      
+/wp-includes          (Status: 301) [Size: 320] [--> http://10.129.107.59/wp-includes/]
+/wp-trackback.php     (Status: 200) [Size: 135]                                        
+/wp-admin             (Status: 301) [Size: 317] [--> http://10.129.107.59/wp-admin/]   
+/xmlrpc.php           (Status: 405) [Size: 42]                                         
+/wp-signup.php        (Status: 302) [Size: 0] [--> http://10.129.107.59/wp-login.php?action=register]
+/server-status        (Status: 403) [Size: 278]                                                      
+Progress: 201262 / 415288 (48.46%)                                                                  ^C
+[!] Keyboard interrupt detected, terminating.
+
+
+-----
+
+
+## WPSCAN
+
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.18
+                               
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[i] Updating the Database ...
+[i] Update completed.
+
+[+] URL: http://10.129.107.59/ [10.129.107.59]
+[+] Started: Mon Nov 22 09:52:39 2021
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entry: Server: Apache/2.4.41 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://10.129.107.59/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] WordPress readme found: http://10.129.107.59/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://10.129.107.59/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: http://10.129.107.59/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 5.8.1 identified (Insecure, released on 2021-09-09).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://10.129.107.59/index.php/feed/, <generator>https://wordpress.org/?v=5.8.1</generator>
+ |  - http://10.129.107.59/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.8.1</generator>
+
+[+] WordPress theme in use: twentyseventeen
+ | Location: http://10.129.107.59/wp-content/themes/twentyseventeen/
+ | Latest Version: 2.8 (up to date)
+ | Last Updated: 2021-07-22T00:00:00.000Z
+ | Readme: http://10.129.107.59/wp-content/themes/twentyseventeen/readme.txt
+ | Style URL: http://10.129.107.59/wp-content/themes/twentyseventeen/style.css?ver=20201208
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 2.8 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.129.107.59/wp-content/themes/twentyseventeen/style.css?ver=20201208, Match: 'Version: 2.8'
+
+[+] Enumerating All Plugins (via Passive Methods)
+
+
+-----
+
+## hashes   
+    c8967e01d9236f9b5be91655f8072d5c
+
+## CDATA
+    admin

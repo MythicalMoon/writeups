@@ -1,0 +1,24 @@
+# Nmap 7.92 scan initiated Wed Oct 12 07:34:16 2022 as: nmap -sC -sV -vv -oA nmap/base 192.168.154.79
+Nmap scan report for glasgowsmile.pg (192.168.154.79)
+Host is up, received conn-refused (0.046s latency).
+Scanned at 2022-10-12 07:34:16 EDT for 9s
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 67:34:48:1f:25:0e:d7:b3:ea:bb:36:11:22:60:8f:a1 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfI+Um/NEmaDpzy9kccx/CHrMEB1l1VDu+tamiGD+VItg0ZxaVs5+5wpu9fOPKBcbCHDMSeJzlPY8RAsqz7LdZkJstARGK4UX6iqWxb2xfu0+PYi+ak7TVxLC+uuSk6ksEVPCb8Zs//bPbYN73yBPZy/0sObvBaJ6yh3pVtn2Q3mA4sPjxrhyHLOir7tUwoS9YDAYF9DAuFJQ9rbJUxPQbKzL4TbHUlVdhaYzXdFub8b8odfkWfocR1h5lOuZfbRgJ16FuFcKBOuKhYmtrkEu/JB5iQ3OYa49+2K54taG0Y/BAAz/IvirKzjGZSSYvjidq1YfmZia1hdwbh+nHihjX
+|   256 4c:8c:45:65:a4:84:e8:b1:50:77:77:a9:3a:96:06:31 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM7oM844qWsqok8aAaJB28sBlnpE9KMEwRDbg7kZNyS9kCf8svDP3OsveL5PQ0rHxQLmZAzxa5dynzdkakLa7qk=
+|   256 09:e9:94:23:60:97:f7:20:cc:ee:d6:c1:9b:da:18:8e (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwY1QTfngVJBfVu3KsoMP03LfmxKX8BeLgjBefIf2zN
+80/tcp open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 12 07:34:25 2022 -- 1 IP address (1 host up) scanned in 9.33 seconds

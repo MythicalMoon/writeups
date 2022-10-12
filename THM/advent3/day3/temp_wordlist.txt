@@ -1,0 +1,5 @@
+admin/
+docs/
+config/
+install/
+install-en/

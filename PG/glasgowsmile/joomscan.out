@@ -1,0 +1,155 @@
+[H[2J[3J[33m
+    ____  _____  _____  __  __  ___   ___    __    _  _ 
+   (_  _)(  _  )(  _  )(  \/  )/ __) / __)  /__\  ( \( )
+  .-_)(   )(_)(  )(_)(  )    ( \__ \( (__  /(__)\  )  ( 
+  \____) (_____)(_____)(_/\/\_)(___/ \___)(__)(__)(_)\_)
+[31m			(1337.today)[0m
+   
+    --=[[34mOWASP JoomScan[0m
+    +---++---==[Version : [31m0.0.7
+[0m    +---++---==[Update Date : [[31m2018/09/23[0m]
+    +---++---==[Authors : [31mMohammad Reza Espargham , Ali Razmjoo[0m
+    --=[Code name : [31mSelf Challenge[0m
+    @OWASP_JoomScan , @rezesp , @Ali_Razmjo0 , @OWASP
+
+[34m[34mProcessing http://glasgowsmile.pg/joomla ...
+
+
+[34m
+[+] FireWall Detector
+[31m[++] Firewall not detected
+[34m[34m
+[+] Detecting Joomla Version
+[33m[++] Joomla 3.7.3rc1
+[34m[34m
+[+] Core Joomla Vulnerability
+[31m[++] Target Joomla core is not vulnerable
+[34m[34m
+[+] Checking Directory Listing
+[33m[++] directory has directory listing : 
+http://glasgowsmile.pg/joomla/administrator/components
+http://glasgowsmile.pg/joomla/administrator/modules
+http://glasgowsmile.pg/joomla/administrator/templates
+http://glasgowsmile.pg/joomla/images/banners
+
+[34m[34m
+[+] Checking apache info/status files
+[31m[++] Readable info/status files are not found
+[34m[34m
+[+] admin finder
+[33m[++] Admin page : http://glasgowsmile.pg/joomla/administrator/
+[34m[34m
+[+] Checking robots.txt existing
+[33m[++] robots.txt is found
+path : http://glasgowsmile.pg/joomla/robots.txt 
+
+Interesting path found from robots.txt
+http://glasgowsmile.pg/joomla/joomla/administrator/
+http://glasgowsmile.pg/joomla/administrator/
+http://glasgowsmile.pg/joomla/bin/
+http://glasgowsmile.pg/joomla/cache/
+http://glasgowsmile.pg/joomla/cli/
+http://glasgowsmile.pg/joomla/components/
+http://glasgowsmile.pg/joomla/includes/
+http://glasgowsmile.pg/joomla/installation/
+http://glasgowsmile.pg/joomla/language/
+http://glasgowsmile.pg/joomla/layouts/
+http://glasgowsmile.pg/joomla/libraries/
+http://glasgowsmile.pg/joomla/logs/
+http://glasgowsmile.pg/joomla/modules/
+http://glasgowsmile.pg/joomla/plugins/
+http://glasgowsmile.pg/joomla/tmp/
+
+[34m[34m
+[+] Finding common backup files name
+[31m[++] Backup files are not found
+[34m[34m
+[+] Finding common log files name
+[31m[++] error log is not found
+[34m[34m
+[+] Checking sensitive config.php.x file
+[31m[++] Readable config files are not found
+[34m[34m
+[+] Enumeration component (com_ajax)
+[33m[++] Name: com_ajax
+Location : http://glasgowsmile.pg/joomla/components/com_ajax/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_ajax/
+
+[34m[34m
+[+] Enumeration component (com_banners)
+[33m[++] Name: com_banners
+Location : http://glasgowsmile.pg/joomla/components/com_banners/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_banners/
+
+[34m[34m
+[+] Enumeration component (com_contact)
+[33m[++] Name: com_contact
+Location : http://glasgowsmile.pg/joomla/components/com_contact/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_contact/
+
+[34m[34m
+[+] Enumeration component (com_content)
+[33m[++] Name: com_content
+Location : http://glasgowsmile.pg/joomla/components/com_content/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_content/
+
+[34m[34m
+[+] Enumeration component (com_contenthistory)
+[33m[++] Name: com_contenthistory
+Location : http://glasgowsmile.pg/joomla/components/com_contenthistory/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_contenthistory/
+
+[34m[34m
+[+] Enumeration component (com_fields)
+[33m[++] Name: com_fields
+Location : http://glasgowsmile.pg/joomla/components/com_fields/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_fields/
+
+[34m[34m
+[+] Enumeration component (com_finder)
+[33m[++] Name: com_finder
+Location : http://glasgowsmile.pg/joomla/components/com_finder/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_finder/
+
+[34m[34m
+[+] Enumeration component (com_mailto)
+[33m[++] Name: com_mailto
+Location : http://glasgowsmile.pg/joomla/components/com_mailto/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_mailto/
+Installed version : 3.1
+
+[34m[34m
+[+] Enumeration component (com_media)
+[33m[++] Name: com_media
+Location : http://glasgowsmile.pg/joomla/components/com_media/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_media/
+
+[34m[34m
+[+] Enumeration component (com_newsfeeds)
+[33m[++] Name: com_newsfeeds
+Location : http://glasgowsmile.pg/joomla/components/com_newsfeeds/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_newsfeeds/
+
+[34m[34m
+[+] Enumeration component (com_search)
+[33m[++] Name: com_search
+Location : http://glasgowsmile.pg/joomla/components/com_search/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_search/
+
+[34m[34m
+[+] Enumeration component (com_users)
+[33m[++] Name: com_users
+Location : http://glasgowsmile.pg/joomla/components/com_users/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_users/
+
+[34m[34m
+[+] Enumeration component (com_wrapper)
+[33m[++] Name: com_wrapper
+Location : http://glasgowsmile.pg/joomla/components/com_wrapper/
+Directory listing is enabled : http://glasgowsmile.pg/joomla/components/com_wrapper/
+Installed version : 3.1
+
+[34m[33m
+
+Your Report : reports/glasgowsmile.pg/
+[0m

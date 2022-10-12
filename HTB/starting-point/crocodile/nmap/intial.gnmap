@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu Nov 11 13:50:14 2021 as: nmap -sC -sV -oA nmap/intial 10.129.60.19
+Host: 10.129.60.19 ()	Status: Up
+Host: 10.129.60.19 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/	Ignored State: closed (998)
+# Nmap done at Thu Nov 11 13:50:23 2021 -- 1 IP address (1 host up) scanned in 9.27 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sun Dec 12 09:24:07 2021 as: nmap -sC -sV -oA nmap/initial -Pn 10.10.247.46
+Host: 10.10.247.46 ()	Status: Up
+Host: 10.10.247.46 ()	Ports: 22/open/tcp//ssh//OpenSSH for_Windows_7.7 (protocol 2.0)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 1433/open/tcp//ms-sql-s//Microsoft SQL Server 2019 15.00.2000.00; RTM/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (996)
+# Nmap done at Sun Dec 12 09:24:37 2021 -- 1 IP address (1 host up) scanned in 29.54 seconds

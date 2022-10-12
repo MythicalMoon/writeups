@@ -1,0 +1,4 @@
+/index.html           (Status: 200) [Size: 901]
+/img                  (Status: 301) [Size: 194] [--> http://horizontall.htb/img/]
+/css                  (Status: 301) [Size: 194] [--> http://horizontall.htb/css/]
+/js                   (Status: 301) [Size: 194] [--> http://horizontall.htb/js/]

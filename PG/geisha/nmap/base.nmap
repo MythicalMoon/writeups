@@ -1,0 +1,30 @@
+# Nmap 7.92 scan initiated Mon Oct 10 08:33:34 2022 as: nmap -sC -sV -vv -oA nmap/base 192.168.154.82
+Nmap scan report for 192.168.154.82
+Host is up, received syn-ack (0.049s latency).
+Scanned at 2022-10-10 08:33:34 EDT for 12s
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+21/tcp   open  ftp     syn-ack vsftpd 3.0.3
+22/tcp   open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 1b:f2:5d:cd:89:13:f2:49:00:9f:8c:f9:eb:a2:a2:0c (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsnjUYSc5T2b2tvCMjMFB05R1XDb0k679PiBuAr7+F+zGCwqqj/QwNZorBNG6uGYxUx+hN/djf3VVjjFwI3yZpwhSDTuJdBWUOQtHGcAvRu7hX6I29y2WbK7ITYJFqAe/1dgvwE91JvN3lnEHJnjYOH0SCFLAwJeC3WiKNJu2pmk20vYKSLajudjWgD4mgppJQOt/TNWSaQpzMlgHYygXyWjSv2/vYxhBl7vRSI2P6joSvE9WS98Ix79LpZlnFvPYnm/Wkpm+tdxD+H33SsAS1um8QVU10sCdjm9GW4Lbn2oCIdasxEN+ezRoTuFwSDepA45lSJaa3p7EBh8TPyGCB
+|   256 31:5a:65:2e:ab:0f:59:ab:e0:33:3a:0c:fc:49:e0:5f (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF+MSjR5FloxtxKTmLLe+8QjrOPcWBTPXu+DAirwB1DqN4lU6RvK6H4AoNOiToigicCVCgXodXPkTG1QVfM3+3w=
+|   256 c6:a7:35:14:96:13:f8:de:1e:e2:bc:e7:c7:66:8b:ac (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDUrhhKnEjUk+AwDfJvlMJuI6eF7e93Fb9yW9fE8ElYt
+80/tcp   open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+|_http-title: Geisha
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.38 (Debian)
+8088/tcp open  http    syn-ack LiteSpeed httpd
+|_http-title: Geisha
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: LiteSpeed
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 10 08:33:46 2022 -- 1 IP address (1 host up) scanned in 12.84 seconds

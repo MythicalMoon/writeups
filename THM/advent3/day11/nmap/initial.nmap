@@ -1,0 +1,52 @@
+# Nmap 7.92 scan initiated Sun Dec 12 09:24:07 2021 as: nmap -sC -sV -oA nmap/initial -Pn 10.10.247.46
+Nmap scan report for 10.10.247.46
+Host is up (0.086s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 2b:c5:31:04:b7:92:68:57:ac:3b:92:18:42:7b:c9:01 (RSA)
+|   256 6c:ad:62:67:ad:1b:24:5d:d5:75:e1:07:1a:9a:69:29 (ECDSA)
+|_  256 19:2f:29:26:a3:fb:37:21:4a:7b:7a:7b:de:e0:4f:12 (ED25519)
+135/tcp  open  msrpc         Microsoft Windows RPC
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-ntlm-info: 
+|   Target_Name: AOC2021-MSSQL
+|   NetBIOS_Domain_Name: AOC2021-MSSQL
+|   NetBIOS_Computer_Name: AOC2021-MSSQL
+|   DNS_Domain_Name: AOC2021-MSSQL
+|   DNS_Computer_Name: AOC2021-MSSQL
+|_  Product_Version: 10.0.17763
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2021-12-12T14:23:40
+|_Not valid after:  2051-12-12T14:23:40
+|_ssl-date: 2021-12-12T14:24:38+00:00; +1s from scanner time.
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: AOC2021-MSSQL
+|   NetBIOS_Domain_Name: AOC2021-MSSQL
+|   NetBIOS_Computer_Name: AOC2021-MSSQL
+|   DNS_Domain_Name: AOC2021-MSSQL
+|   DNS_Computer_Name: AOC2021-MSSQL
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-12-12T14:24:33+00:00
+|_ssl-date: 2021-12-12T14:24:38+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=AOC2021-MSSQL
+| Not valid before: 2021-10-31T21:09:16
+|_Not valid after:  2022-05-02T21:09:16
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| ms-sql-info: 
+|   10.10.247.46:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+|_clock-skew: mean: 1s, deviation: 0s, median: 0s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 12 09:24:37 2021 -- 1 IP address (1 host up) scanned in 29.54 seconds

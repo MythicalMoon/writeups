@@ -1,0 +1,11 @@
+MariaDB [batjoke]> SELECT * FROM taskforce;
++----+---------+------------+---------+----------------------------------------------+
+| id | type    | date       | name    | pswd                                         |
++----+---------+------------+---------+----------------------------------------------+
+|  1 | Soldier | 2020-06-14 | Bane    | YmFuZWlzaGVyZQ==                             |
+|  2 | Soldier | 2020-06-14 | Aaron   | YWFyb25pc2hlcmU=                             |
+|  3 | Soldier | 2020-06-14 | Carnage | Y2FybmFnZWlzaGVyZQ==                         |
+|  4 | Soldier | 2020-06-14 | buster  | YnVzdGVyaXNoZXJlZmY=                         |
+|  6 | Soldier | 2020-06-14 | rob     | Pz8/QWxsSUhhdmVBcmVOZWdhdGl2ZVRob3VnaHRzPz8/ |
+|  7 | Soldier | 2020-06-14 | aunt    | YXVudGlzIHRoZSBmdWNrIGhlcmU=                 |
++----+---------+------------+---------+----------------------------------------------+
