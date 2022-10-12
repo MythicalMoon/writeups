@@ -6,7 +6,7 @@
 
     gobuster dir -u http://glasgowsmile.pg -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o gobuster-base
 
-![](/Screenshots/2022-10-12-09-28-13.png)
+![gobuster](/Screenshots/2022-10-12-09-28-13.png)
 
 ## gobuster /joomla
 
