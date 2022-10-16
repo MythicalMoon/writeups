@@ -66,14 +66,11 @@ $1$🧂llol$DQpmdvnb7EeuO6UaqRItf.
 
 ```bash
 hashcat -a 0 -m 500 user /usr/share/wordlists/rockyou.txt
-````
-
-```bash
-
 ```
 
 
-## SSH info
+
+# SSH info
 ## users
     m4lwhere
 ## password

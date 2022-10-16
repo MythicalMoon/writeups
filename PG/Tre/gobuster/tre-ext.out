@@ -1,0 +1,10 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 271]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 271]
+/.htpasswd           [33m (Status: 403)[0m [Size: 271]
+/adminer.php         [32m (Status: 200)[0m [Size: 4586]
+/cms                 [36m (Status: 301)[0m [Size: 298][34m [--> http://tre.pg/cms/][0m
+/info.php            [32m (Status: 200)[0m [Size: 87859]
+/mantisbt            [36m (Status: 301)[0m [Size: 303][34m [--> http://tre.pg/mantisbt/][0m
+/server-status       [33m (Status: 403)[0m [Size: 271]
+/system              [33m (Status: 401)[0m [Size: 453]

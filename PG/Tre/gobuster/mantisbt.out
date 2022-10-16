@@ -1,0 +1,32 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 271]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 271]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 271]
+/.htpasswd           [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 271]
+/admin               [36m (Status: 301)[0m [Size: 309][34m [--> http://tre.pg/mantisbt/admin/][0m
+/api                 [36m (Status: 301)[0m [Size: 307][34m [--> http://tre.pg/mantisbt/api/][0m
+/bug_report.php      [32m (Status: 200)[0m [Size: 4886]
+/config              [36m (Status: 301)[0m [Size: 310][34m [--> http://tre.pg/mantisbt/config/][0m
+/core                [36m (Status: 301)[0m [Size: 308][34m [--> http://tre.pg/mantisbt/core/][0m
+/core.php            [32m (Status: 200)[0m [Size: 0]
+/css                 [36m (Status: 301)[0m [Size: 307][34m [--> http://tre.pg/mantisbt/css/][0m
+/doc                 [36m (Status: 301)[0m [Size: 307][34m [--> http://tre.pg/mantisbt/doc/][0m
+/file_download.php   [36m (Status: 302)[0m [Size: 0][34m [--> http://tre.pg/mantisbt/login_page.php?return=%2Fmantisbt%2Ffile_download.php][0m
+/fonts               [36m (Status: 301)[0m [Size: 309][34m [--> http://tre.pg/mantisbt/fonts/][0m
+/images              [36m (Status: 301)[0m [Size: 310][34m [--> http://tre.pg/mantisbt/images/][0m
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> http://tre.pg/mantisbt/login_page.php][0m
+/js                  [36m (Status: 301)[0m [Size: 306][34m [--> http://tre.pg/mantisbt/js/][0m
+/lang                [36m (Status: 301)[0m [Size: 308][34m [--> http://tre.pg/mantisbt/lang/][0m
+/library             [36m (Status: 301)[0m [Size: 311][34m [--> http://tre.pg/mantisbt/library/][0m
+/login.php           [36m (Status: 302)[0m [Size: 0][34m [--> http://tre.pg/mantisbt/login_page.php?error=1&username=&return=my_view_page.php][0m
+/main_page.php       [36m (Status: 302)[0m [Size: 0][34m [--> http://tre.pg/mantisbt/login_page.php?return=%2Fmantisbt%2Fmain_page.php][0m
+/plugin.php          [32m (Status: 200)[0m [Size: 4826]
+/plugins             [36m (Status: 301)[0m [Size: 311][34m [--> http://tre.pg/mantisbt/plugins/][0m
+/scripts             [36m (Status: 301)[0m [Size: 311][34m [--> http://tre.pg/mantisbt/scripts/][0m
+/search.php          [36m (Status: 302)[0m [Size: 0][34m [--> http://tre.pg/mantisbt/login_page.php?return=%2Fmantisbt%2Fsearch.php][0m
+/signup.php          [32m (Status: 200)[0m [Size: 4886]
+/vendor              [36m (Status: 301)[0m [Size: 310][34m [--> http://tre.pg/mantisbt/vendor/][0m
+/verify.php          [32m (Status: 200)[0m [Size: 4911]
+/view.php            [32m (Status: 200)[0m [Size: 4824]
+/wiki.php            [32m (Status: 200)[0m [Size: 4824]

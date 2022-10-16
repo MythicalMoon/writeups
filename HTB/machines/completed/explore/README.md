@@ -7,16 +7,6 @@ to port forward:
 
 ssh kristi@10.10.10.247 -p 2222 -L 5555:localhost:5555
 
-## ssh = ssh
-## kristi = user
-## @IP = ip
-## -p = port tag
-## 2222 = port of ssh
-## -L = Listen
-## 5555: = Listening port (make sure it's not being used)
-## localhost = machines IP
-## :5555 = Destination port
-
 this will connect to the device as ## UNAME - Linux
 
 fromt there you can exploit freeciv with ADB (AndroidDebuggingBridge)

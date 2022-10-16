@@ -1,0 +1,29 @@
+# Nmap 7.93 scan initiated Sun Oct 16 13:07:44 2022 as: nmap -sV -sC -vv -oA nmap/base 192.168.162.84
+Nmap scan report for tre.pg (192.168.162.84)
+Host is up, received conn-refused (0.045s latency).
+Scanned at 2022-10-16 13:07:44 EDT for 10s
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 991aead7d7b348809f88822a14eb5f0e (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHMd6tbRI/GrqZQaWx7CAYYD22gD6KeVl/sZdKJTi7duDnBz3FqxHZBdk4mMTvupWZDLyB9/sGkb99ptqZ1TZNn+86sWvQTFR7vV+9PAQGIDs82Jta/NO9XORx3wkNVunxCaw9Iwf9AxlbY6Vc1Ot6ydEMUHo1Ha1G1i+9h5kh/7InJRF6HZgb0zmbV4n2lWWgye0dR5bLKjt/5QcKGFdv40fOIRv2/jWv/DWHJRCxRS8bS5LBfFXgdWRvu+sxeQbdzDXqCow2FeMcHQiNuuVpnrmnFAg7GdrA36srgnXO2ZXEGijFZehfnINkdUnqGMYY4kb03nDDZPO29Ami/zQP
+|   256 f4f69cdbcfd4df6a910a8105defa8df8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDp3d72lJQsYyph4NbauO2u1nMokOTYcPPWH193ps7xb1euNLKSjJp1OtEwuhzu3lvUGxEQU3ISm9uj2g1sr0lk=
+|   256 edb9a9d72d00f81bd399d602e5ad179f (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMuyBmHN7xrwj6KcGc2WT2NP0jIsGmRxMZkCBkr2SKrB
+80/tcp   open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-title: Tre
+|_http-server-header: Apache/2.4.38 (Debian)
+8082/tcp open  http    syn-ack nginx 1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Tre
+|_http-server-header: nginx/1.14.2
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 16 13:07:54 2022 -- 1 IP address (1 host up) scanned in 10.98 seconds

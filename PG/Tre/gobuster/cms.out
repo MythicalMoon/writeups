@@ -1,0 +1,16 @@
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 271]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 271]
+/.htaccess           [33m (Status: 403)[0m [Size: 271]
+/.htaccess.html      [33m (Status: 403)[0m [Size: 271]
+/.htpasswd           [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 271]
+/.htpasswd.html      [33m (Status: 403)[0m [Size: 271]
+/cache               [36m (Status: 301)[0m [Size: 304][34m [--> http://tre.pg/cms/cache/][0m
+/core                [36m (Status: 301)[0m [Size: 303][34m [--> http://tre.pg/cms/core/][0m
+/custom              [36m (Status: 301)[0m [Size: 305][34m [--> http://tre.pg/cms/custom/][0m
+/extensions          [36m (Status: 301)[0m [Size: 309][34m [--> http://tre.pg/cms/extensions/][0m
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> site/][0m
+/site                [36m (Status: 301)[0m [Size: 303][34m [--> http://tre.pg/cms/site/][0m
+/templates           [36m (Status: 301)[0m [Size: 308][34m [--> http://tre.pg/cms/templates/][0m
+/vendor              [36m (Status: 301)[0m [Size: 305][34m [--> http://tre.pg/cms/vendor/][0m
