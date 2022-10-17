@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Sat Nov 13 08:39:59 2021 as: nmap -sC -sV -oA nmap/intial 10.129.50.196
-Host: 10.129.50.196 ()	Status: Up
-Host: 10.129.50.196 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows Server 2019 Standard 17763 microsoft-ds/, 1433/open/tcp//ms-sql-s//Microsoft SQL Server 2017 14.00.1000.00; RTM/	Ignored State: closed (996)
-# Nmap done at Sat Nov 13 08:40:17 2021 -- 1 IP address (1 host up) scanned in 18.24 seconds

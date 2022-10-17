@@ -1,1 +1,0 @@
-# Nmap 7.92 scan initiated Thu Nov 11 13:01:21 2021 as: nmap -p 3306 -sC -sV -oA nmap/3306 10.129.70.219

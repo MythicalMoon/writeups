@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Wed Dec  1 12:54:27 2021 as: nmap -sC -sV -oA initial -Pn 46.101.24.207
-Host: 46.101.24.207 ()	Status: Up
-Host: 46.101.24.207 ()	Ports: 30718/open/tcp//unknown///	Ignored State: filtered (999)
-# Nmap done at Wed Dec  1 12:54:49 2021 -- 1 IP address (1 host up) scanned in 22.59 seconds

@@ -1,8 +1,0 @@
-After Overpass's rocky start in infosec, and the commercial failure of their password manager and subsequent hack, they've decided to try a new business venture.
-
-Overpass has become a web hosting company!
-Unfortunately, they haven't learned from their past mistakes. Rumour has it, their main web server is extremely vulnerable.
-
-## Cant stabilize shell, therefore cant establish a decent shell that recognizes its own IP, rather than showing just ""##localhost##""
-
-Self recognition: got to web flag without writeups

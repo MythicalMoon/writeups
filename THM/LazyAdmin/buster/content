@@ -1,8 +1,0 @@
-/.htpasswd            (Status: 403) [Size: 278]
-/.htaccess            (Status: 403) [Size: 278]
-/_themes              (Status: 301) [Size: 324] [--> http://10.10.145.177/content/_themes/]
-/as                   (Status: 301) [Size: 319] [--> http://10.10.145.177/content/as/]
-/attachment           (Status: 301) [Size: 327] [--> http://10.10.145.177/content/attachment/]
-/images               (Status: 301) [Size: 323] [--> http://10.10.145.177/content/images/]
-/inc                  (Status: 301) [Size: 320] [--> http://10.10.145.177/content/inc/]
-/js                   (Status: 301) [Size: 319] [--> http://10.10.145.177/content/js/]
