@@ -1,0 +1,13 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 274]
+/.htaccess.html      [33m (Status: 403)[0m [Size: 274]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 274]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 274]
+/.htpasswd.html      [33m (Status: 403)[0m [Size: 274]
+/.htpasswd           [33m (Status: 403)[0m [Size: 274]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 274]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 274]
+/index.html          [32m (Status: 200)[0m [Size: 3065]
+/nothing             [36m (Status: 301)[0m [Size: 308][34m [--> http://pwned1.pg/nothing/][0m
+/robots.txt          [32m (Status: 200)[0m [Size: 61]
+/robots.txt          [32m (Status: 200)[0m [Size: 61]
+/server-status       [33m (Status: 403)[0m [Size: 274]
