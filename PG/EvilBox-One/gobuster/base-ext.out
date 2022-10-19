@@ -1,0 +1,10 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 275]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 275]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 275]
+/.htpasswd           [33m (Status: 403)[0m [Size: 275]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 275]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 275]
+/robots.txt          [32m (Status: 200)[0m [Size: 12]
+/robots.txt          [32m (Status: 200)[0m [Size: 12]
+/secret              [36m (Status: 301)[0m [Size: 309][34m [--> http://evilbox.pg/secret/][0m
+/server-status       [33m (Status: 403)[0m [Size: 275]
