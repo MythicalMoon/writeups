@@ -1,0 +1,23 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 211]
+/.htpasswd           [33m (Status: 403)[0m [Size: 211]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 215]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 215]
+/.htpasswd.html      [33m (Status: 403)[0m [Size: 216]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 215]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 215]
+/.htaccess.html      [33m (Status: 403)[0m [Size: 216]
+/cgi-bin/            [33m (Status: 403)[0m [Size: 210]
+/cgi-bin/.html       [33m (Status: 403)[0m [Size: 215]
+/css                 [36m (Status: 301)[0m [Size: 238][34m [--> http://insanityhosting.pg/css/][0m
+/data                [36m (Status: 301)[0m [Size: 239][34m [--> http://insanityhosting.pg/data/][0m
+/fonts               [36m (Status: 301)[0m [Size: 240][34m [--> http://insanityhosting.pg/fonts/][0m
+/img                 [36m (Status: 301)[0m [Size: 238][34m [--> http://insanityhosting.pg/img/][0m
+/index.php           [32m (Status: 200)[0m [Size: 31]
+/index.html          [32m (Status: 200)[0m [Size: 22263]
+/js                  [36m (Status: 301)[0m [Size: 237][34m [--> http://insanityhosting.pg/js/][0m
+/licence             [32m (Status: 200)[0m [Size: 57]
+/monitoring          [36m (Status: 301)[0m [Size: 245][34m [--> http://insanityhosting.pg/monitoring/][0m
+/news                [36m (Status: 301)[0m [Size: 239][34m [--> http://insanityhosting.pg/news/][0m
+/phpinfo.php         [32m (Status: 200)[0m [Size: 85320]
+/phpmyadmin          [36m (Status: 301)[0m [Size: 245][34m [--> http://insanityhosting.pg/phpmyadmin/][0m
+/webmail             [36m (Status: 301)[0m [Size: 242][34m [--> http://insanityhosting.pg/webmail/][0m

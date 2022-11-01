@@ -1,0 +1,23 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 222]
+/.htpasswd           [33m (Status: 403)[0m [Size: 222]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 226]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 226]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 226]
+/.htaccess.html      [33m (Status: 403)[0m [Size: 227]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 226]
+/.htpasswd.html      [33m (Status: 403)[0m [Size: 227]
+/assets              [36m (Status: 301)[0m [Size: 248][34m [--> http://192.168.81.124/monitoring/assets/][0m
+/class               [36m (Status: 301)[0m [Size: 247][34m [--> http://192.168.81.124/monitoring/class/][0m
+/cron.php            [33m (Status: 403)[0m [Size: 221]
+/css                 [36m (Status: 301)[0m [Size: 245][34m [--> http://192.168.81.124/monitoring/css/][0m
+/fonts               [36m (Status: 301)[0m [Size: 247][34m [--> http://192.168.81.124/monitoring/fonts/][0m
+/images              [36m (Status: 301)[0m [Size: 248][34m [--> http://192.168.81.124/monitoring/images/][0m
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/js                  [36m (Status: 301)[0m [Size: 244][34m [--> http://192.168.81.124/monitoring/js/][0m
+/login.php           [32m (Status: 200)[0m [Size: 4848]
+/logout.php          [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/settings            [36m (Status: 301)[0m [Size: 250][34m [--> http://192.168.81.124/monitoring/settings/][0m
+/smarty              [36m (Status: 301)[0m [Size: 248][34m [--> http://192.168.81.124/monitoring/smarty/][0m
+/templates           [36m (Status: 301)[0m [Size: 251][34m [--> http://192.168.81.124/monitoring/templates/][0m
+/templates_c         [36m (Status: 301)[0m [Size: 253][34m [--> http://192.168.81.124/monitoring/templates_c/][0m
+/vendor              [36m (Status: 301)[0m [Size: 248][34m [--> http://192.168.81.124/monitoring/vendor/][0m
