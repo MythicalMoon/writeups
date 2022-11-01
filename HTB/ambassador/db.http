@@ -1,0 +1,14 @@
+POST /api/user/password/send-reset-email HTTP/1.1
+Host: 10.10.11.183:3000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.11.183:3000/user/password/send-reset-email
+content-type: application/json
+Origin: http://10.10.11.183:3000
+Content-Length: 33
+Connection: close
+Cookie: redirect_to=%2F
+
+{"userOrEmail":"test@tester.com"}
