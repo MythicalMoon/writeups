@@ -203,4 +203,8 @@ sudo PERL5OPT=-d PERL5DB='exec "cp /bin/bash /tmp/moon/rootbash && chmod u+s /tm
 
 ![rootflag](Screenshots/2023-12-19-13-42-16.png)
 
+## Personal Input
+
+```The box challenged a variety of pre-existing skills as well as introduced new personal challenges, such as polishing white-box testing skills, I don't often dive into source code, so this was a great experience to practice and do a deep dive into code flow; Experimenting and learning more about SQL mass injection. CRLF was my 1st go to and it worked perfectly, however I researched other possibilities just to calm my curiosity. The fact that SESSION information only updated on relog drove me mad for quite a while since I completely overlooked that fact. Surprisingly Enough priviledge escalation was tough as I had to look into strace more and launch GHydra to help myself better understand what's happening. Finding perl_startup escalation vulnerability took me ages. All in all This was the most challenging box I've done in a while and kept me in a well balanced spot between frustrated and satisfied. A lot of takeaways from this box, can't recommend it enough for others. ```
+
 ![Pwnd](Screenshots/2023-12-19-13-45-08.png)
