@@ -14,11 +14,11 @@ nmap -sC -sV -p- -vv -oN nmap/full $target
 
 ![Nmap](/HTB/Clicker/Screenshots/2023-12-19-11-27-30.png)
 
-    rpcbind reveals that nfs is available and supporting older versions.
+```rpcbind reveals that nfs is available and supporting older versions.```
 
 ![rpcinfo](/HTB/Clicker/Screenshots/2023-12-19-11-13-47.png)
 
-    Knowing this, mount the share
+```Knowing this, mount the share```
 
 ![showmounts](/HTB/Clicker/Screenshots/2023-12-19-11-16-36.png)
 
@@ -29,7 +29,7 @@ sudo mount -o nolock $target:/mnt/backups mnt
 
 ![mnt/backups contents](/HTB/Clicker/Screenshots/2023-12-19-11-35-38.png)
 
-    Move and unzip the contents of the backups and unmount as it's served it's purpose.
+```Move and unzip the contents of the backups and unmount as it's served it's purpose.```
 
 ```bash
 cp clicker.htb_backups.zip ../
@@ -37,21 +37,23 @@ unzip ../clicker.htb_backups.zip
 sudo umount $target:/mnt/backups
 ```
 
-    We now posess the source code which will help in finding any vulnerabilities. 
+```We now posess the source code which will help in finding any vulnerabilities.```
 
 ![role](/HTB/Clicker/Screenshots/2023-12-19-11-42-05.png)
 
-    We see that role as a URL argument is blacklisted as well as only the clicks and level are session updated. So in the case where we manage to update the role we'd need to refresh the session values by reloging since all the values get updated on authentication:
+```We see that role as a URL argument is blacklisted as well as only the clicks and level are session updated. So in the case where we manage to update the role we'd need to refresh the session values by reloging since all the values get updated on authentication:```
 
 ![authentication.php](/HTB/Clicker/Screenshots/2023-12-19-11-44-47.png)
 
-    To access `admin.php` we'll need to set our role to admin
+```To access `admin.php` we'll need to set our role to admin```
 
 ![admin.php](/HTB/Clicker/Screenshots/2023-12-19-11-45-44.png)
 
-    There's two ways to achieve that:
-    - sql mass assignment
-    - CRLF vulnerability
+```latex
+There's two ways to achieve that:
+- sql mass assignment
+- CRLF vulnerability
+```
 
 [ABOUT: Mass assignment](https://learn.snyk.io/lesson/mass-assignment/)
 
