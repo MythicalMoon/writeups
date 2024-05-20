@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu May 16 21:26:15 2024 as: nmap -sU -vv -p- -oN nmap/full-extra --min-rate=5000 10.10.13.40
+Increasing send delay for 10.10.13.40 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
+Warning: 10.10.13.40 giving up on port because retransmission cap hit (10).
+Nmap scan report for valley.thm (10.10.13.40)
+Host is up, received reset ttl 63 (0.074s latency).
+Scanned at 2024-05-16 21:26:15 EEST for 145s
+All 65535 scanned ports on valley.thm (10.10.13.40) are in ignored states.
+Not shown: 65382 open|filtered udp ports (no-response), 153 closed udp ports (port-unreach)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu May 16 21:28:40 2024 -- 1 IP address (1 host up) scanned in 145.00 seconds

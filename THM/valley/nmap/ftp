@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Thu May 16 20:59:17 2024 as: nmap -sC -sV -vv -oN nmap/ftp -p 37370 *ftp* 10.10.13.40
+Failed to resolve "*ftp*".
+Nmap scan report for valley.thm (10.10.13.40)
+Host is up, received syn-ack (0.058s latency).
+Scanned at 2024-05-16 20:59:17 EEST for 4s
+
+PORT      STATE SERVICE REASON  VERSION
+37370/tcp open  ftp     syn-ack vsftpd 3.0.3
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May 16 20:59:21 2024 -- 1 IP address (1 host up) scanned in 4.59 seconds
